@@ -3,11 +3,8 @@
 ![gbm_animation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2f851869-5b6b-430c-b488-9288fef93baa)
 
 
-The **Geometric Brownian Motion (GBM)** model is a widely used stochastic process for modeling asset price dynamics.  
-It assumes that the **percentage change** in an asset price follows a continuous-time stochastic process with constant drift and volatility.
-
-The GBM model is described by the following **stochastic differential equation (SDE)**:
-
+The **Geometric Brownian Motion (GBM)** model is a widely used stochastic process for modeling stock price dynamics.  
+The GBM model is described by the following **stochastic differential equation (SDE)** which asserts that the return of the stock over a small time dt > 0 is (up to first order) a normal random variable with mean and variance proportional to dt:
  dS_t = μ S_t dt + σ S_t dW_t
 
 where:
