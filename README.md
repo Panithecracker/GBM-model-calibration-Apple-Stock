@@ -23,7 +23,7 @@ where:
 The solution to the SDE is:
 S_t = S_0 * exp( ( μ - 0.5 σ² ) t + σ W_t )
 
-Which consecuently means that the prices are lognormally distributed. This implies that to a good approximation, the daily returns are normally distributed as log(Sn+1/Sn) = log(1+R) which is a little more than the return R, provided that the difference in time is small enough so to ensure that R has not been too large. Some empirical data has shown that over a day this conclusion is reasonably reflected in the real stock motion.
+Which consequently means that the prices are lognormally distributed. This implies that to a good approximation, the daily returns are normally distributed as log(Sn+1/Sn) = log(1+R) which is a little more than the return R, provided that the difference in time is small enough so to ensure that R has not been too large. Some empirical data has shown that over a day this conclusion is reasonably reflected in the real stock motion.
 
 ln(S_t) ~ Normal( ln(S_0) + ( μ - σ² / 2 ) t ,  σ² t )
 
@@ -32,23 +32,15 @@ Based on the solution we can easily fit/calibrate the model parameters with (ann
 ---
 
 ## Calibration Procedure
-Given historical price data \( S_{t_0}, S_{t_1}, \dots, S_{t_n} \):
+Given historical price data \( S_{t_0}, S_{t_1}, \dots, S_{t_n} \) and using the fact from the log of the ratios between consecutive days, I obtained the annual drift and volatility as follows:
 
-1. **Compute Log Returns**  
-   \[
-   r_i = \ln\left(\frac{S_{t_{i+1}}}{S_{t_i}}\right)
-   \]
+<img width="649" height="89" alt="image" src="https://github.com/user-attachments/assets/ee300bb7-5020-4572-a0aa-2d9210910637" />
 
-2. **Estimate Drift and Volatility**  
-   - Mean of log returns:
-     \[
-     \hat{\mu} = \frac{\text{mean}(r)}{\Delta t} + \frac{\hat{\sigma}^2}{2}
-     \]
-   - Volatility from standard deviation:
-     \[
-     \hat{\sigma} = \frac{\text{std}(r)}{\sqrt{\Delta t}}
-     \]
-   where \( \Delta t \) is the time step in years.
+## Illustration of results:
 
 <img width="1675" height="867" alt="image" src="https://github.com/user-attachments/assets/a44c9cde-95aa-4d58-970a-96f207bdeaa2" />
+
+
+## Obtaining the probability distribution for obtaining a desired return over time:
+
 
