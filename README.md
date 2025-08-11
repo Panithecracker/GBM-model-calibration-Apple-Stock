@@ -1,5 +1,8 @@
 # GBM-model-calibration-Apple-Stock
 ## Overview
+![gbm_animation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2f851869-5b6b-430c-b488-9288fef93baa)
+
+
 The **Geometric Brownian Motion (GBM)** model is a widely used stochastic process for modeling asset price dynamics.  
 It assumes that the **percentage change** in an asset price follows a continuous-time stochastic process with constant drift and volatility.
 
@@ -42,5 +45,7 @@ Given historical price data \( S_{t_0}, S_{t_1}, \dots, S_{t_n} \) and using the
 
 
 ## Obtaining the probability distribution for obtaining a desired return over time:
+<img width="1657" height="884" alt="ProbsAllMonths" src="https://github.com/user-attachments/assets/de9c6d42-be14-49fc-8fb1-0150c5106e37" />
+
 
 
