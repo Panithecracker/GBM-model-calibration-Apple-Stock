@@ -23,11 +23,11 @@ where:
 The solution to the SDE is:
 S_t = S_0 * exp( ( μ - 0.5 σ² ) t + σ W_t )
 
-Which consequently means that the prices are lognormally distributed. This implies that to a good approximation, the daily returns are normally distributed as log(Sn+1/Sn) = log(1+R) which is a little more than the return R, provided that the difference in time is small enough so to ensure that R has not been too large. Some empirical data has shown that over a day this conclusion is reasonably reflected in the real stock motion.
+Which consequently means that the prices are lognormally distributed. This implies that to a good approximation, the daily returns are normally distributed as log(Sn+1/Sn) = log(1+R) which is a little more than the return R, provided that the difference in time is small enough so to ensure that R has not been too large.
 
 ln(S_t) ~ Normal( ln(S_0) + ( μ - σ² / 2 ) t ,  σ² t )
 
-Based on the solution we can easily fit/calibrate the model parameters with (annual) real data.
+In this project, we use this solution to fit the parameters for real Apple stock data.
 
 ---
 
