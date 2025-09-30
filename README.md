@@ -27,7 +27,7 @@ Which consequently means that the prices are lognormally distributed. This impli
 
 ln(S_t) ~ Normal( ln(S_0) + ( μ - σ² / 2 ) t ,  σ² t )
 
-In this project, we use this solution to fit the parameters for real Apple stock data.
+In this project, we use this solution to fit the parameters for real Apple stock data over the last year, extracted from Yahoo Finance.
 
 ---
 
